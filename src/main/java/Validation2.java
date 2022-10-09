@@ -20,13 +20,13 @@ public class Validation2 {
 	}
 	@Test
 	public void validate() throws InterruptedException {
-		WebElement catagory = driver.findElement(By.xpath("//div[@class=\"controls\"]/descendant::span[2]"));
-		catagory.click();
+		WebElement Checkpoint = driver.findElement(By.name("todo[0]"));
+		Checkpoint.click();
 		Thread.sleep(3000);
-		WebElement yes = driver.findElement(By.linkText("Yes"));
-		yes.click();
-		Thread.sleep(6000);
-		driver.close();
+		WebElement remove =driver.findElement(By.name("submit"));
+		remove.click();
+
+
 	}
 
 }
